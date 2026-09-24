@@ -206,28 +206,73 @@ h1 {
 .name {
   cursor: pointer;
   display: inline-block;
-  transition: 0.25s;
-  background: linear-gradient(120deg, #d6216f 0%, #ff4f9a 45%, #ff8fc7 100%);
+  transition: 0.35s;
+  background: linear-gradient(
+    120deg,
+    #d6216f 0%,
+    #ff4f9a 30%,
+    #ffd6ec 48%,
+    #ff8fc7 62%,
+    #d6216f 100%
+  );
+  background-size: 220% 100%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  filter: drop-shadow(0 0 22px rgba(216, 33, 111, 0.35));
+  filter:
+    drop-shadow(0 0 6px rgba(255, 255, 255, 0.55))
+    drop-shadow(0 0 16px rgba(255, 143, 199, 0.6))
+    drop-shadow(0 0 30px rgba(216, 33, 111, 0.45));
+  animation: crystal-shimmer 5s ease-in-out infinite;
 }
 
 .site.dark .name {
-  background: linear-gradient(120deg, #ff4f9a 0%, #ff77b6 45%, #ffb3d9 100%);
+  background: linear-gradient(
+    120deg,
+    #ff4f9a 0%,
+    #ff77b6 28%,
+    #ffffff 48%,
+    #ffb3d9 64%,
+    #ff4f9a 100%
+  );
+  background-size: 220% 100%;
   -webkit-background-clip: text;
   background-clip: text;
-  filter: drop-shadow(0 0 30px rgba(255, 95, 152, 0.55));
+  filter:
+    drop-shadow(0 0 8px rgba(255, 255, 255, 0.7))
+    drop-shadow(0 0 22px rgba(255, 119, 182, 0.7))
+    drop-shadow(0 0 40px rgba(255, 95, 152, 0.55));
 }
 
 .name:hover {
-  filter: drop-shadow(0 0 34px rgba(216, 33, 111, 0.6));
+  filter:
+    drop-shadow(0 0 10px rgba(255, 255, 255, 0.8))
+    drop-shadow(0 0 26px rgba(255, 143, 199, 0.85))
+    drop-shadow(0 0 46px rgba(216, 33, 111, 0.7));
 }
 
 .site.dark .name:hover {
-  filter: drop-shadow(0 0 44px rgba(255, 95, 152, 0.85));
+  filter:
+    drop-shadow(0 0 12px rgba(255, 255, 255, 0.9))
+    drop-shadow(0 0 32px rgba(255, 119, 182, 0.95))
+    drop-shadow(0 0 56px rgba(255, 95, 152, 0.8));
+}
+
+@keyframes crystal-shimmer {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .name {
+    animation: none;
+  }
 }
 
 .roles {
