@@ -259,8 +259,8 @@ export function CertificationsSection({ active }: { active: boolean }) {
         <div className="big">
           <div className="kicker">A small note</div>
           <p>
-            Beyond the projects themselves, this portfolio reflects a commitment to continuous learning
-            and growth.
+            Beyond the projects themselves, these certifications reflect a commitment to continuous
+            learning and growth.
           </p>
         </div>
       </div>
