@@ -72,6 +72,7 @@ nav {
 
 .brand {
   font: 600 21px var(--font-playfair), serif;
+  color: var(--pink);
 }
 
 .brand i {
@@ -160,11 +161,11 @@ main {
   inset: -24px;
   background-image: url("/paris.jpg");
   background-repeat: no-repeat;
-  background-position: center 58%;
-  background-size: 760px auto;
-  filter: blur(5px);
-  opacity: 0.22;
-  transform: scale(1.035);
+  background-position: center 56%;
+  background-size: 1080px auto;
+  filter: blur(1.5px);
+  opacity: 0.28;
+  transform: scale(1.02);
   pointer-events: none;
   /* Light mode: multiply removes the white paper, leaving soft grey lines */
   mix-blend-mode: multiply;
@@ -173,8 +174,8 @@ main {
 /* Night mode: invert flips the black lines to white and the white paper to
    black, then screen drops that black so only the white skyline remains. */
 .site.dark .hero:before {
-  opacity: 0.16;
-  filter: blur(6px) invert(1);
+  opacity: 0.32;
+  filter: blur(3px) invert(1);
   mix-blend-mode: screen;
 }
 
@@ -545,12 +546,12 @@ footer {
     display: none;
   }
   .hero:before {
-    background-size: 600px auto;
+    background-size: 720px auto;
     background-position: center 57%;
-    filter: blur(5px);
+    filter: blur(1.5px);
   }
   .site.dark .hero:before {
-    filter: blur(5px) invert(1);
+    filter: blur(3px) invert(1);
   }
   h1 {
     letter-spacing: -3px;

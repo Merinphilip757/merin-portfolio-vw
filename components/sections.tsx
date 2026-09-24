@@ -282,7 +282,7 @@ export function ContactSection({ active }: { active: boolean }) {
         <div className="contactLinks">
           <a
             className="contactLink pink"
-            href="https://www.linkedin.com/in/merinphilip"
+            href="https://www.linkedin.com/in/merinannaphilip75"
             target="_blank"
             rel="noopener noreferrer"
           >
