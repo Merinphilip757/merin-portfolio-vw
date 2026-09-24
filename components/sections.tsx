@@ -106,7 +106,7 @@ export function WorkSection({ active }: { active: boolean }) {
           <div className="item">
             <div className="date">Jun 2025 — Jul 2025</div>
             <div>
-              <h3>AI / Artificial Intelligence Intern</h3>
+              <h3>AI Intern</h3>
               <p>
                 NoviTech R&amp;D Pvt Ltd · Designed and developed AI-driven solutions using machine
                 learning techniques and Python for real-world datasets. Performed data preprocessing,
