@@ -207,12 +207,21 @@ h1 {
   cursor: pointer;
   display: inline-block;
   transition: 0.25s;
-  color: var(--pink);
-  text-shadow: 0 0 26px rgba(216, 75, 123, 0.35);
+  color: #9966cc;
+  text-shadow: 0 0 26px rgba(153, 102, 204, 0.4);
+  }
+  
+.site.dark .name {
+  color: #b98fe6;
+  text-shadow: 0 0 30px rgba(185, 143, 230, 0.6);
 }
 
-.site.dark .name {
-  text-shadow: 0 0 30px rgba(255, 95, 152, 0.55);
+.name:hover {
+  text-shadow: 0 0 40px rgba(153, 102, 204, 0.7);
+}
+
+.site.dark .name:hover {
+  text-shadow: 0 0 48px rgba(185, 143, 230, 0.9);
 }
 
 .name:hover {

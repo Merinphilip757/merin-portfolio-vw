@@ -125,9 +125,9 @@ export function Portfolio() {
               >
                 {dark ? '☀' : '☾'}
               </button>
-              <button className="pill talk" onClick={() => navigate('contact')}>
+              <a className="pill talk" href="mailto:merinphilip7575@email.com">
                 Let&apos;s talk ↗
-              </button>
+              </a>
             </div>
           </nav>
         </div>
